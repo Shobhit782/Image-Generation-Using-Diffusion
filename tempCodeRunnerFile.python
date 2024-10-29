@@ -1,0 +1,30 @@
+# Dictionary of Hindi keywords to their Python equivalents
+keywords = {
+    'परिवर्तनशील': 'var',
+    'कार्य': 'function',
+    'प्रिंट': 'print',
+    'जबतक': 'while',
+    'यदि': 'if',
+    'अन्यथा': 'else'
+}
+
+# Function to translate and execute Hindi code
+def interpret_line(line):
+    # Replace Hindi keywords with Python equivalents
+    for hindi_word, python_word in keywords.items():
+        line = line.replace(hindi_word, python_word)
+    # Execute the line as Python code
+    exec(line)
+
+# Example Hindi code to interpret
+code = [
+    "परिवर्तनशील संख्या = 5",
+    "जबतक (संख्या > 0):",
+    "    प्रिंट(संख्या)",
+    "    संख्या = संख्या - 1",
+    "प्रिंट('समाप्त!')"
+]
+
+# Interpret each line of the code
+for line in code:
+    interpret_line(line)
