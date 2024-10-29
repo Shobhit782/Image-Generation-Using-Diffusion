@@ -6,7 +6,6 @@ This project is a Flask web application that generates artwork using Stable Diff
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#Project-Structure)
 - [Routes](#routes)
 - [Technologies Used](#technologies-used)
@@ -39,12 +38,14 @@ pip install -r requirements.txt
 
 3. **Run the Application**:
 Run the app.py file
-Usage
+
 Open your browser and navigate to http://127.0.0.1:5000.
+
 Enter text prompts, select options, or use voice input for generating artwork.
+
 Initiate gesture detection to control the color palette through specific hand gestures.
 
-### Project-Structure
+## Project-Structure
 project-root/
 │
 ├── app.py                 # Main Flask application file
@@ -55,18 +56,19 @@ project-root/
 ├── requirements.txt       # List of project dependencies
 └── README.md              # Project documentation
 
-### Routes
-/: Main page to input prompts and control settings.
+## Routes
+Main page to input prompts and control settings.
 /generate (POST): Generates artwork based on text prompts and selected options.
 /recognize_speech (GET): Captures and processes speech input.
 /start_gesture_detection (POST): Starts gesture detection, enabling color palette selection through hand gestures.
-Technologies Used
+
+## Technologies Used
 Flask: Web framework for Python
 Stable Diffusion: AI model for generating artwork
 SpeechRecognition: Library for speech-to-text conversion
 MediaPipe: For hand gesture detection and recognition
 NLTK: Natural Language Toolkit for tokenizing and refining text
 
-### Future Enhancements
+## Future Enhancements
 WebSocket Integration: Real-time feedback from gesture detection to the front end.
 Additional Gestures: Add more hand gestures for extended functionality.
