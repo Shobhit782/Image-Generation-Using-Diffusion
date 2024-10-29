@@ -1,7 +1,6 @@
 # AI-Driven Art Generation with Gesture, Voice, and Facial Expression Control
 
 This project is a Flask web application that generates artwork using Stable Diffusion based on user inputs through text, voice, and hand gestures. The system leverages gesture detection using MediaPipe, speech recognition via Google Web Speech API, and the Stable Diffusion model for generating artwork based on custom prompts, color palettes, and art styles.
-
 ## Table of Contents
 
 - [Features](#features)
