@@ -34,6 +34,7 @@ This project is a Flask web application that generates artwork using Stable Diff
    git clone https://github.com/yourusername/yourproject.git
    cd yourproject
 2.**Install Dependencies**:
+
 pip install -r requirements.txt
 
 3. **Run the Application**:
